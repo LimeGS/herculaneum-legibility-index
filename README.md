@@ -1,5 +1,8 @@
 # A legibility index for the Vesuvius Challenge's official ink maps
 
+[![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey)](LICENSE)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-model-yellow)](https://huggingface.co/LimeGS/herculaneum-legibility-proxy)
+
 The community's ink-detection models already tell us where the ink is. This
 project answers the next question: **of all that published output, where is
 there actually readable text?** A small triage classifier scores every ~1 cm
@@ -108,6 +111,21 @@ advantage), and PHerc 0139, Scroll 5 and Scroll 4 were zero-fine-tuning
 transfers, the last one checked against real transcription counts
 (Spearman r = 0.843 with per-wrap transcribed-letter counts, n = 18). If a scroll has official-pipeline ink maps and a known physical
 scale, it can be indexed the same way — happy to run it or take a PR.
+
+## Related projects
+
+Part of the LimeGS toolchain for the [Vesuvius Challenge](https://scrollprize.org):
+
+- [winding-field](https://github.com/LimeGS/winding-field): winding-field core and reproducible evaluation.
+- [winding-field-cli](https://github.com/LimeGS/winding-field-cli): end-to-end CLI from CT to fibres, winding field, meshes and flattened charts.
+- [ink-sdk](https://github.com/LimeGS/ink-sdk): standalone ink inference on surface volumes, or on tifxyz meshes plus CT.
+- [helena-framework](https://github.com/LimeGS/helena-framework): reproducible, auditable orchestration of the volume → surface → ink → page pipeline.
+- [herculaneum-legibility-v5](https://github.com/LimeGS/herculaneum-legibility-v5): corrected-label retraining of the legibility classifier.
+- [vesuvius-chat](https://github.com/LimeGS/vesuvius-chat): search the Discord research archive from a web chat or an AI agent.
+
+## Citation
+
+If you use this work, please cite it with the metadata in [CITATION.cff](CITATION.cff) (GitHub's **Cite this repository** button reads it).
 
 ## License
 

@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it using the metadata from this file."
+type: dataset
+title: "A legibility index for the Vesuvius Challenge's official ink maps"
+abstract: "Where is there actually readable text? A small triage classifier scores every ~1 cm window of the official ink maps for legible-letter likelihood"
+authors:
+  - name: LimeGS
+repository-code: https://github.com/LimeGS/herculaneum-legibility-index
+url: https://huggingface.co/LimeGS/herculaneum-legibility-proxy
+license: CC-BY-4.0
+keywords:
+  - herculaneum-scrolls
+  - machine-learning
+  - research
+  - vesuvius-challenge
